@@ -4,6 +4,7 @@ node_js:
 skip_cleanup: true
 script:
   - npm install webpack -g
+  - npm install webpack-cli -g
   - webpack -p --config ./webpack.config.js
   # - npm run build
   # - npm test
