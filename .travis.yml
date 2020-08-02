@@ -3,8 +3,8 @@ node_js:
   - "stable"
 skip_cleanup: true
 install:
-  - npm install webpack -g
-  - npm install webpack-cli -g
+  - npm install --save-dev webpack
+  - npm install --save-dev webpack-cli
 script:
   - webpack -p --config ./webpack.config.js
   # - npm run build
