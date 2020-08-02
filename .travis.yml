@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - "stable"
+skip_cleanup: true
+script:
+  - webpack -p --config ./webpack.config.js
+  # - npm run build
+  # - npm test
