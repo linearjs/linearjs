@@ -1,4 +1,5 @@
 const webpack = require("webpack");
+const path = require("path");
 
 module.exports = {
   entry: {
@@ -7,7 +8,7 @@ module.exports = {
   },
   devtool: "source-map",
   output: {
-    path:"./dist",
+    path: path.join(path.resolve(), "dist"),
     filename: "[name].js"
   }
 };
