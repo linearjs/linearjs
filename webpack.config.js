@@ -9,11 +9,5 @@ module.exports = {
   output: {
     path: "./dist",
     filename: "[name].js"
-  },
-  plugins: [
-    new config.optimization.minimize({
-      include: /\.min\.js$/,
-      minimize: true
-    })
-  ]
+  }
 };
