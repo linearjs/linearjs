@@ -2,9 +2,10 @@ language: node_js
 node_js:
   - "stable"
 skip_cleanup: true
-script:
+install:
   - npm install webpack -g
   - npm install webpack-cli -g
+script:
   - webpack -p --config ./webpack.config.js
   # - npm run build
   # - npm test
