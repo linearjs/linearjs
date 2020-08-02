@@ -8,6 +8,6 @@ module.exports = {
   devtool: "source-map",
   output: {
     path: __dirname + "/dist",
-    filename: "[name].js"
+    filename: "linearjs.js"
   }
 };
