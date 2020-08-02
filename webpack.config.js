@@ -9,6 +9,5 @@ module.exports = {
   output: {
     path: __dirname + "/build",
     filename: "[name].js"
-  },
-  chunkFilename: '[id].[hash:8].js'
+  }
 };
