@@ -11,7 +11,7 @@ module.exports = {
     filename: "[name].js"
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({
+    new config.optimization.minimize({
       include: /\.min\.js$/,
       minimize: true
     })
