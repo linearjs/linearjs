@@ -7,7 +7,7 @@ install:
   - npm install --save-dev webpack-cli
 script:
   - webpack src/linearjs.js -o dist/linearjs.js
-  - git remote set-url origin https://MatthyPlayz:$GH_SECRET_KEY@github.com/linearjs.git
+  - git remote set-url origin https://MatthyPlayz:$GH_SECRET_KEY@github.com/linearjs/linearjs.git
   - git add dist/linearjs.js
   - git commit -m "automated .travis.yml upload"
   - git push origin travis
