@@ -6,6 +6,6 @@ install:
   - npm install --save-dev webpack
   - npm install --save-dev webpack-cli
 script:
-  - webpack -p --config ./webpack.config.js
+  - webpack src/linearjs.js -o dist/linearjs.js
   # - npm run build
   # - npm test
