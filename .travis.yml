@@ -7,5 +7,8 @@ install:
   - npm install --save-dev webpack-cli
 script:
   - webpack src/linearjs.js -o dist/linearjs.js
+  - git add dist/linearjs.js
+  - git commit -m "automated .travis.yml upload"
+  - git push origin master
   # - npm run build
   # - npm test
