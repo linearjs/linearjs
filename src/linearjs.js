@@ -31,8 +31,9 @@ class LinearElement extends HTMLElement {
 	}
 	parse() {
 		console.log("%c INFO: Powered by Linearwiki!", "background: cyan; color: black; font-weight: bold;")
-		this.innerHTML = this.innerHTML.replace(/\|b/g, "<b>");
-		this.innerHTML = this.innerHTML.replace(/b\|/g, "</b>");
+	 	this.innerHTML = this.innerHTML.replace(/\|b/g, "<b>").replace(/b\|/g, "</b>");
+		this.innerHTML = this.innerHTML.replace(/\|i/g, "<i>").replace(/i\|/g, "</i>");
+		this.innerHTML = this.innerHTML.replace(/\|u/g, "<u>").replace(/u\|/g, "</u>");
 
 		for (var i = 6; i > 0; i--) {
 			this.innerHTML = this.innerHTML.replace(new RegExp("\\|" + "#".repeat(i), "g"), "<h" + i + ">");
@@ -57,8 +58,9 @@ class LinearElement extends HTMLElement {
 }
 function parse(ele) {
 	console.log(("%c INFO: Powered by Linearwiki!", "background: cyan; color: black; font-weight: bold;"));
-	ele.innerHTML = ele.innerHTML.replace(/\|b/g, "<b>");
-	ele.innerHTML = ele.innerHTML.replace(/b\|/g, "</b>");
+	ele.innerHTML = ele.innerHTML.replace(/\|b/g, "<b>").replace(/b\|/g, "</b>");
+	ele.innerHTML = ele.innerHTML.replace(/\|i/g, "<i>").replace(/i\|/g, "</i>");
+	ele.innerHTML = ele.innerHTML.replace(/\|u/g, "<u>").replace(/u\|/g, "</u>");
 
 	for (var i = 6; i > 0; i--) {
 		ele.innerHTML = ele.innerHTML.replace(new RegExp("\\|" + "#".repeat(i), "g"), "<h" + i + ">");
